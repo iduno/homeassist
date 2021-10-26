@@ -29,8 +29,8 @@ blueprint:
           unit_of_measurement: "%"
     time_start:
       name: Start Time
-        selector:
-          time:
+      selector:
+        time:
     time_end:
       name: End Time
         selector:
