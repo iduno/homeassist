@@ -27,14 +27,15 @@ blueprint:
           mode: slider
           step: 1.0
           unit_of_measurement: "%"
+
     time_start:
       name: Start Time
       selector:
         time:
     time_end:
       name: End Time
-        selector:
-          time:
+      selector:
+        time:
     no_motion_wait:
       name: Wait time
       description: Time to leave the light on after last motion is detected.
