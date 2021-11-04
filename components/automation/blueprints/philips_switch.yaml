@@ -1,5 +1,5 @@
 blueprint:
-  name: ZHA - Philips Hue Dimmer Switch (individual buttons)
+  name: Deconz - Philips Hue Dimmer Switch (individual buttons)
   description: |
     All four buttons are individual buttons with short,
     long and double press actions for scenes or automations
@@ -87,7 +87,7 @@ mode: restart
 max_exceeded: silent
 trigger:
   - platform: event
-    event_type: zha_event
+    event_type: deconz_event
     event_data:
       device_id: !input "remote"
 action:
