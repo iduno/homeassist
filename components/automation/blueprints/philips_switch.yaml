@@ -10,11 +10,7 @@ blueprint:
       description: The remote to use
       selector:
         device:
-          integration: zha
-          manufacturer: Philips
-          entity:
-            domain: sensor
-            device_class: battery
+          integration: deconz
     button_1_single_press:
       name: Button 1 (ON) Single Press
       description: Action to run on single press
