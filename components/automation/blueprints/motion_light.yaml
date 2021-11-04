@@ -56,9 +56,10 @@ trigger:
   entity_id: !input motion_entity
   from: "off"
   to: "on"
-- platform: time
-  after: !input time_start
-  before: !input time_end
+- condition:
+  - condition: time
+    after: !input time_start
+    before: !input time_end
   
 action:
   - alias: "Turn on the light"
