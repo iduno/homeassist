@@ -52,11 +52,11 @@ mode: restart
 max_exceeded: silent
 
 trigger:
-  platform: state
+- platform: state
   entity_id: !input motion_entity
   from: "off"
   to: "on"
-  platform: time
+- platform: time
   after: time_start
   before: time_end
   
