@@ -92,7 +92,7 @@ trigger:
       device_id: !input "remote"
 action:
   - variables:
-      command: "{{ trigger.data.event }}"
+      command: "{{ trigger.event.data.event }}"
   - choose:
       - conditions:
           - "{{ command == 1002 }}"
