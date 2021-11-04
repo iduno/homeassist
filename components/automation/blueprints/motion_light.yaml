@@ -57,8 +57,8 @@ trigger:
   from: "off"
   to: "on"
 - platform: time
-  after: time_start
-  before: time_end
+  after: !input time_start
+  before: !input time_end
   
 action:
   - alias: "Turn on the light"
