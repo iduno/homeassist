@@ -88,14 +88,14 @@ max_exceeded: silent
 trigger:
   - platform: event
     event_type: deconz_event
-    data:
+    event_data:
       device_id: !input "remote"
 action:
   - variables:
-      command: "{{ trigger.data.event }}"
+      command: "{{ trigger.event.data.event }}"
   - choose:
       - conditions:
-          - "{{ command == '1002' }}"
+          - "{{ command == 1002 }}"
         sequence: !input "button_1_single_press"
       - conditions:
           - "{{ command == 'on_hold' }}"
